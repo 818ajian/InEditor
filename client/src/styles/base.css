@@ -1,0 +1,103 @@
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed);
+
+:root {
+  --font-size: 0.75rem;
+
+  --menubar-max-height: 2rem;
+
+  --toolbar-top: 4rem;
+  --toolbar-icon-height: 1.5rem;
+  --toolbar-icon-padding: 0.1rem;
+  --toolbar-icon-margin-left: 0.3rem;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+/******************************** Menubar ***************************************/
+.navbar {
+  background-color: var(--menubar-bg-color);
+  max-height: var(--menubar-max-height);
+}
+
+.navbar .dropdown-toggle {
+  color: var(--menubar-font-color);
+}
+
+.navbar .dropdown-item {
+  font-size: var(--font-size);
+}
+
+/******************************** SplitContainer ********************************/
+.splitContainer{
+  background: var(--splitContainer-bg-color);
+  top: var(--toolbar-top);
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+/******************************** Resizer ***************************************/
+.Resizer {
+  background: var(--resizer-bg-color);
+  opacity: 0.2;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.Resizer.horizontal {
+  height: 11px;
+  margin: -5px 0;
+  border-top: var(--resizer-border);
+  border-bottom: var(--resizer-border);
+  cursor: row-resize;
+  width: 100%;
+}
+
+.Resizer.horizontal:hover {
+  border-top: var(--resizer-border-hover);
+  border-bottom: var(--resizer-border-hover);
+}
+
+.Resizer.vertical {
+  width: 11px;
+  margin: 0 -5px;
+  border-left: var(--resizer-border);
+  border-right: var(--resizer-border);
+  cursor: col-resize;
+}
+
+.Resizer.vertical:hover {
+  border-left: var(--resizer-border-hover);
+  border-right: var(--resizer-border-hover);
+}
+
+.Resizer.disabled {
+  cursor: default;
+}
+
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+/******************************** Toolbar ***************************************/
+.toolbar{
+  /* margin-top: var(--toolbar-top); */
+  max-height: var(--menubar-max-height);
+  background-color: var(--toolbar-bg-color);
+}
+
+.toolbar img{
+  height: var(--toolbar-icon-height);
+  padding: var(--toolbar-icon-padding);
+  margin-left: var(--toolbar-icon-margin-left);
+}
