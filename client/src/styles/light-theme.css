@@ -11,16 +11,25 @@
   --splitContainer-bg-color: #EAEAEA;
 
   /******************************** Resizer ***************************************/
-  --resizer-bg-color: rgba(37, 42, 52, 0.3);
+  --resizer-bg-color: rgba(37, 42, 52, 0);
   /* --resizer-bg-color: rgba(0, 0, 0); */
-  --resizer-border: 0.25rem solid rgba(234, 234, 234, 0);
-  --resizer-border-hover: 0.25rem solid rgba(37, 42, 52, 0.6);
+  --resizer-border: 2.5px solid rgba(234, 234, 234, 0);
+  --resizer-border-hover: 2.5px  solid rgba(37, 42, 52, 0.6);
 
   /******************************** Toolbar ***************************************/
   --toolbar-bg-color: #EAEAEA;
 
+  /******************************** TreeView **************************************/
+  --treeview-bg-color: white;
+  --treeview-font-color: #252A34;
+
+  /******************************** scrollbar *************************************/
+  --scrollbar-color: rgba(234, 234, 234, 0.3);
+  --scrollbar-color-hover: rgba(234, 234, 234, 0.8);
+
+
+
   --sidebar-bg-color: black;
-  --treeview-bg-color: #222222;
   --workspace-bg-color: black;
   --viewport-bg-color: #eaeaea;
 

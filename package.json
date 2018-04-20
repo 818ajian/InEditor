@@ -4,7 +4,8 @@
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon ./server/server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "install-module": "npm i && npm i --only=dev && cd client && npm i && npm i --only=dev"
   },
   "dependencies": {
     "bson": "^2.0.5",

@@ -1,6 +1,5 @@
 import React from 'react';
-// import floor_d from '../assets/icon/floor_d.png';
-import assets from 'components/Assets';
+import assets from 'assets/Assets';
 
 import {
   Nav,

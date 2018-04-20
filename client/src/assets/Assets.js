@@ -1,3 +1,4 @@
+/** import assets from icon folder */
 import floor_d from '../assets/icon/floor_d.png';
 import floor_a from '../assets/icon/floor_a.png';
 import cell_d from '../assets/icon/cell_d.png';
@@ -12,7 +13,12 @@ import stair_d from '../assets/icon/stair_d.png';
 import stair_a from '../assets/icon/stair_a.png';
 import go_viewer from '../assets/icon/go_viewer.png';
 
-
+/** import assets from tree-icon folder */
+import cell from '../assets/tree-icon/cell.png';
+import cellboundary from '../assets/tree-icon/cellboundary.png';
+import state from '../assets/tree-icon/state.png';
+import transition from '../assets/tree-icon/transition.png';
+import floor from '../assets/tree-icon/floor.png';
 
 export default {
 
@@ -33,6 +39,16 @@ export default {
     activatedState : state_a,
     activatedTransition : transition_a,
     activatedStair : stair_a,
+
+  },
+
+  treeIcon:{
+
+    floor: floor,
+    cell: cell,
+    cellSpaceBoundry: cellboundary,
+    state: state,
+    transition: transition
 
   }
 
